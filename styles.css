@@ -1,55 +1,60 @@
-/*
-Error: Invalid CSS after "    placeholder": expected ";", was ": width: 200px"
-        on line 58 of styles.scss
+h1, h2, h3, h4, h5, h6 {
+  color: #73af04;
+  font-family: Arial, sans-serif;
+  font-weight: bold; }
 
-53:     font-size: 15pt;
-54:     }
-55: 
-56:   form  {
-57:     width: 80%
-58:     placeholder: width: 200px
-59:     align-content: center;
-60:     placeholder: height: 80%}
-61: 
-62: 
-63:   table {
+h1, h2 {
+  text-align: center; }
 
-Backtrace:
-styles.scss:58
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:815:in `block in try_declaration'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1284:in `rethrow'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:820:in `try_declaration'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:743:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"    placeholder\": expected \";\", was \": width: 200px\"\A         on line 58 of styles.scss\A \A 53:     font-size: 15pt;\A 54:     }\A 55: \A 56:   form  {\A 57:     width: 80%\A 58:     placeholder: width: 200px\A 59:     align-content: center;\A 60:     placeholder: height: 80%}\A 61: \A 62: \A 63:   table {"; }
+h3, h4, h5, h6 {
+  text-align: left;
+  line-height: 2; }
+
+p {
+  color: #black;
+  text-align: justify;
+  font-family: Arial, sans-serif;
+  line-height: 2; }
+
+body {
+  margin: 2%; }
+
+ol {
+  color: #black;
+  text-align: justify;
+  font-family: Arial, sans-serif;
+  line-height: 2; }
+
+ul {
+  color: #black;
+  text-align: justify;
+  font-family: Arial, sans-serif;
+  line-height: 2; }
+
+button {
+  background-color: #73af04;
+  color: white;
+  height: auto;
+  width: auto;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 15pt; }
+
+form {
+  width: 80%;
+  align-content: center; }
+
+table {
+  width: 100%;
+  height: 40px;
+  background-color: #73af04;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-align: center; }
+
+a {
+  color: white;
+  text-decoration: none; }
+
+/*# sourceMappingURL=styles.css.map */
