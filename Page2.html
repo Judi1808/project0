@@ -2,32 +2,45 @@
 <html>
     <head>
         <title>My Webpage</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <table>
-      <tr><td></td></tr>
-    </table>
-    <img src="mornin run Logo.jpg" width=20%;>
-    <p>www.morninrun.com  |  e-mail : morninrun@remax24.com  |  + 230 5839 7998</p>
-    <table>
-      <tr><td></td></tr>
+
+<body>
+    <div class="container">
+      <div class ="row">
+        <div class="col-md-5 align-self-center";>
+          <img src="mornin run Logo.jpg" height=200px;>
+        </div>
+        <div class="col-md-3 my-auto";>
+          |  e-mail  :  morninrun@remax24.com
+          |  + 230 5839 7998
+        </div>
+        <div class="col-md-4";>
+          <img src="Green Footprints LS.jpg" height=200px;>
+          </div>
+      </div>
+    </div>
+
+  <br>
+    <table class="table1";>
       <tr>
-        <td><a href="index.html">HOME</a></td>
-        <td><a href="page2.html">REGISTRATION</a></td>
-        <td><a href="page3.html">DISCLAIMER</a></td>
-        <td><a href="page4.html">PRIVACY POLICY</a></td>
-      <tr>
-          <td></td>
+        <td><a class="one" href="index.html">HOME</a></td>
+        <td><a class="one" href="page2.html">REGISTRATION</a></td>
+        <td><a class="one" href="page3.html">DISCLAIMER</a></td>
+        <td><a class="one"href="page4.html">PRIVACY POLICY</a></td>
       </tr>
     </table>
+
         <br>
-    <body>
         <h1>REGISTER NOW!</h1>
 
         <p>All our events are free and organized by volunteers.  If you are a new runner and have not previously registered, please register below.
           </p>
 
         <h3>REGISTRATION FORM</h3>
+
         <form>
           <p>First Name</p>
           <input
@@ -45,7 +58,7 @@
             <br>
             <p>Phone Number</p>
           <input
-            type="text"
+            type="number"
             placeholder="Phone"
             name="Phone"
             >
@@ -64,8 +77,39 @@
               name="Gender"
               >
               <br>
+              <p>Date of Birth</p>
+          <input
+              type="date"
+              placeholder="Date of Birth"
+              name="DOB"
+              >
+              <br>
         </form>
               <br>
+
+          <div class="btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary active">
+              <input type="checkbox" autocomplete="off"><p>I confirm that I have read, and accept the DISCLAIMER & PRIVACY POLICY<p>
+              </label>
+          </div>
+
+          <buttons class="button1">
+            <a href="page2.html">CLICK HERE TO REGISTER</a></button>
+
         <button>SUBMIT</button>
+
+            <br>
+            <br>
+
+        <table class="table2">
+          <tr>
+            <td> CONTACT US: </td>
+            <td><a href="mailto:morninrun@remax24.com">e-mail : morninrun@remax24.com</a></td>
+            <td> Tel - +230 260 0571</td>
+            <td> WhatsApp - +230 5 839 7998</td>
+          </tr>
+        </table>
+
       </body>
+
     </html>
