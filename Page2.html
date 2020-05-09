@@ -1,3 +1,9 @@
+<?php
+if($_POST["submit"]) {
+    mail("morninrun@remax24.com", "MORNIN' RUN ENTRANT", $_POST["message"], "From: morninrun@remax24.com");
+}
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -39,9 +45,8 @@
         <p>All our events are free and organized by volunteers.  If you are a new runner and have not previously registered, please register below.
           </p>
 
-        <h3>REGISTRATION FORM</h3>
+        <h4>REGISTRATION FORM</h4>
 
-        <form>
           <p>First Name</p>
           <input
             type="text"
@@ -85,26 +90,22 @@
               >
               <br>
         </form>
+
               <br>
+              <input type="checkbox" autocomplete="off"> <p> Tick box to confirm that you have read and agreed to the terms of the <a class="three" href="page3.html">DISCLAIMER</a> and <a class="three" href="page4.html">PRIVACY POLICY</a>.
 
-          <div class="btn-group-toggle" data-toggle="buttons">
-              <label class="btn btn-secondary active">
-              <input type="checkbox" autocomplete="off"><p>I confirm that I have read, and accept the DISCLAIMER & PRIVACY POLICY<p>
-              </label>
-          </div>
-
-          <buttons class="button1">
-            <a href="page2.html">CLICK HERE TO REGISTER</a></button>
-
-        <button>SUBMIT</button>
-
+          <br>
+          <button class="button2">
+            <a class="one" href="page2.html">REGISTER ME NOW</a></button>
             <br>
             <br>
+            <p> Now that you're part of the team, sign up and become a member of our club on <a class="four" href="https://www.strava.com/clubs/morninrun">STRAVA</a><img src="Strava Logo.jpg" height=50px;>.  Now you can participate, even when you're not in Mauritius.</p>
+
 
         <table class="table2">
           <tr>
             <td> CONTACT US: </td>
-            <td><a href="mailto:morninrun@remax24.com">e-mail : morninrun@remax24.com</a></td>
+            <td><a class="one" href="mailto:morninrun@remax24.com">e-mail : morninrun@remax24.com</a></td>
             <td> Tel - +230 260 0571</td>
             <td> WhatsApp - +230 5 839 7998</td>
           </tr>
