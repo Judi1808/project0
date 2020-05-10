@@ -18,9 +18,12 @@ h4, h5 {text-align: left; line-height: 2}
     color: $colorc;
     text-align: justify;
     font-family: $family;
-    line-height: 2}
+    line-height: 2;
+    white-space: pre-line;}
 
-  body {margin: 2%;}
+  body {margin: 3%;}
+
+  #green {color: $color; font-weight: normal; display: inline; white-space: pre-line;}
 
   ol {
     color: $colorc;
@@ -49,19 +52,24 @@ h4, h5 {text-align: left; line-height: 2}
     .table2{@extend %table; font-size: 9pt}
 
 
-  form  {
-    width: 50%;
-    align-content: center;
-    ::placeholder {
-        color: blue;
-        font-size: 1.5em;}
-    }
-
+  form  {width: 50%; align-content: center; font-family: $family; white-space: pre-line;}
+        ::placeholder {color: $color; font-size: 9pt;}
+        #form {color: $color; font-weight: bold; display: inline;}
 
       a.one:link, a.one:visited, a.one:hover {color:$colorb; text-decoration: none;}
       a.two:link, a.two:visited, a.two:hover {color:$colorc;text-decoration: none;}
       a.three:link, a.three:visited, a.three:hover {color:$color;text-decoration: underline;}
       a.four:link, a.four:visited, a.four:hover {color:$colord;text-decoration: underline;}
+
+      @media screen {
+        .noPrint{}
+        .noScreen{display:none;}
+          }
+
+      @media print {
+        .noPrint{display:none;}
+        .noScreen{}
+          }
 
     .container {
       background-color: $colorb;

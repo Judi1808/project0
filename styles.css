@@ -15,10 +15,17 @@ p {
   color: black;
   text-align: justify;
   font-family: Arial, sans-serif;
-  line-height: 2; }
+  line-height: 2;
+  white-space: pre-line; }
 
 body {
-  margin: 2%; }
+  margin: 3%; }
+
+#green {
+  color: #73af04;
+  font-weight: normal;
+  display: inline;
+  white-space: pre-line; }
 
 ol {
   color: black;
@@ -51,10 +58,18 @@ ul {
 
 form {
   width: 50%;
-  align-content: center; }
-  form ::placeholder {
-    color: blue;
-    font-size: 1.5em; }
+  align-content: center;
+  font-family: Arial, sans-serif;
+  white-space: pre-line; }
+
+::placeholder {
+  color: #73af04;
+  font-size: 9pt; }
+
+#form {
+  color: #73af04;
+  font-weight: bold;
+  display: inline; }
 
 a.one:link, a.one:visited, a.one:hover {
   color: white;
@@ -72,6 +87,12 @@ a.four:link, a.four:visited, a.four:hover {
   color: #FC4C02;
   text-decoration: underline; }
 
+@media screen {
+  .noScreen {
+    display: none; } }
+@media print {
+  .noPrint {
+    display: none; } }
 .container {
   background-color: white;
   color: black;
